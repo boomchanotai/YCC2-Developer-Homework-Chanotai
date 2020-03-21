@@ -1,0 +1,546 @@
+@font-face{
+    font-family: "Roboto-Regular";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Roboto-Medium";
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face{
+    font-family: "Roboto-Light";
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face{
+    font-family: "Roboto-Bold";
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+h1{
+    font-family: "Roboto-Medium";
+}
+
+div{
+    font-family: "Roboto-Regular";
+}
+
+p{
+    font-family: "Roboto-Regular";
+}
+
+body{
+    font-family: "Roboto-Regular";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    font-family: "Roboto-Light";
+    background-color: #ffffff;
+    opacity: 0.97;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #CECED2;
+    z-index: 2;
+}
+
+nav div:nth-child(1){
+    display: none;
+}
+
+nav div{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    margin: 0 auto;
+    width: 700px;
+    padding: 10px;
+    opacity: 1;
+}
+
+nav a{
+    font-family: "Roboto-Light";
+    text-decoration: none;
+    color: #000000;
+    opacity: 1;
+}
+
+.macbookpro-preview{
+    background-color: #F9F9F9;
+    text-align: center;
+    padding-top: 15vh;
+}
+
+.macbookpro-preview img{
+    width: 40%;
+}
+
+.macbookpro-preview div:nth-child(1){
+    font-family: "Roboto-Light";
+    color: #FF9500;
+}
+
+.macbookpro-preview h1{
+    margin: 10px;
+    margin-bottom: 5px;
+    font-family: "Roboto-Medium";
+    color: #333333;
+    font-size: 3.8vw;
+}
+
+.macbookpro-preview div:nth-child(3){
+    font-family: "Roboto-Regular";
+    color: #757575;
+    font-size: 1.6vw;
+}
+
+.macbookpro-preview div:nth-child(4){
+    margin: 25px;
+}
+
+.macbookpro-preview div:nth-child(4) a{
+    color: #007AFF;
+    text-decoration: none;
+}
+
+.SurfaceSwift-preview{
+    margin-top: 0.5em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.2em;
+}
+
+.SurfaceSwift-preview div:nth-child(1){
+    background-image: url(../img/Image1@2x.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    height: 85vh;
+}
+
+.SurfaceSwift-preview div:nth-child(2){
+    background-color: #F9F9F9;
+    background-image: url(../img/Image2@2x.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 80%;
+    height: 85vh;
+}
+
+.SurfaceSwift-preview span{
+    text-align: center;
+}
+
+.SurfaceSwift-preview h1{
+    font-family: "Roboto-Medium";
+    font-size: 3vw;
+    color: #333333;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.SurfaceSwift-preview p{
+    margin: 0;
+    color: #757575;
+    font-size: 1.4vw;
+}
+
+.XPS-Zenbook-preview{
+    margin-top: 0.5em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.2em;
+}
+
+.XPS-Zenbook-preview div:nth-child(1){
+    background-color: #F9F9F9;
+    background-image: url(../img/20180216-150622_c-removebg-preview@2x.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 85%;
+    height: 85vh;
+}
+
+.XPS-Zenbook-preview div:nth-child(2){
+    background-color: #F9F9F9;
+    background-image: url(../img/Image3@2x.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-y: 100px;
+    background-size: 80%;
+    height: 85vh;
+}
+
+.XPS-Zenbook-preview span{
+    text-align: center;
+}
+
+.XPS-Zenbook-preview h1{
+    font-family: "Roboto-Medium";
+    font-size: 3vw;
+    color: #333333;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.XPS-Zenbook-preview p{
+    margin: 0;
+    color: #757575;
+    font-size: 1.4vw;
+}
+
+.content-footer{
+    color: #757575;
+    width: 960px;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+#macbook-container{
+    display: none;
+}
+
+#surface-container{
+    display: none;
+}
+
+#surface-info{
+    cursor: pointer;
+}
+
+#swift-container{
+    display: none;
+}
+
+#swift-info{
+    cursor: pointer;
+}
+
+#xps-container{
+    display: none;
+}
+
+#xps-info{
+    cursor: pointer;
+}
+
+#zenbookpro-container{
+    display: none;
+}
+
+#zenbookpro-info{
+    cursor: pointer;
+}
+
+.container{
+    background-color: #FFFFFF;
+    padding: 50px;
+
+}
+
+.container p{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-family: "Roboto-Medium";
+    color: #007AFF;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+    transform: translate(15%);
+}
+
+.container-fluid{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container-fluid div:nth-child(1) img:nth-child(1){
+    opacity: 0;
+}
+
+.container-fluid div:nth-child(1) img:nth-child(2){
+    position: fixed;
+    width: 40%;
+    left: 10%;
+    transform: translateY(10%);
+}
+
+.container-fluid h1{
+    font-family: "Roboto-Regular";
+    font-size: 2.5vw;
+    margin: 20px 0px 20px 0px;
+}
+
+.container-fluid h2{
+    font-family: "Roboto-Regular";
+    font-size: 2vw;
+    margin: 20px 0px 20px 0px;
+}
+
+.container-fluid div div:nth-child(2){
+    font-family: "Roboto-Regular";
+    color: #707070;
+    line-height: 2;
+    font-size: 1.2vw;
+}
+
+.container-fluid .ssd{
+    color: #757575;
+    padding: 20px;
+    border: 1.2px solid #CECED2;
+    border-radius: 8px;
+    margin: 10px;
+    margin-left: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ssd:hover{
+    background-color: #007AFF1A;
+    border: 1.2px solid #007AFF;
+    color: #007AFF;
+}
+
+.container-fluid .purchase{
+    font-family: "Roboto-Medium";
+    font-size: 16px;
+    border: none;
+    background-color: #007AFF;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.purchase:hover{
+    background-color: #0061cc;
+}
+
+.container-fluid img{
+    width: 100%;
+}
+
+.ordered{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.ordered h1{
+    font-family: "Roboto-Regular";
+    color: #000000;
+    font-size: 2.8vw;
+    margin: 20px;
+}
+
+.ordered div{
+    font-family: "Roboto-Light";
+    font-size: 1.6vw;
+    color: #757575;
+    margin-bottom: 50px;
+}
+
+.ordered a{
+    font-family: "Roboto-Bold";
+    font-size: 1.6vw;
+    color: #007AFF;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px){
+    .SurfaceSwift-preview{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .SurfaceSwift-preview div:nth-child(1){
+        background-position: center;
+        background-size: 100%;
+        height: 300px;
+    }
+    .SurfaceSwift-preview div:nth-child(2){
+        background-position: center;
+        background-size: 60%;
+        height: 300px;
+    }
+    .XPS-Zenbook-preview{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container-fluid h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .container-fluid div div:nth-child(2){
+        font-size: 16px;
+    }
+    .container-fluid h2{
+        text-align: center;
+    }
+    .XPS-Zenbook-preview div:nth-child(1){
+        background-position: bottom;
+        background-size: 70%;
+        height: 300px;
+    }
+    .XPS-Zenbook-preview div:nth-child(2){
+        background-position: bottom;
+        background-size: 60%;
+        height: 300px;
+    }
+    
+    /*
+    .container-fluid div:nth-child(1) img:nth-child(1){
+        opacity: 0;
+        margin: 10px;
+    }
+    .container-fluid div:nth-child(1) img:nth-child(2){
+        display: none;
+    }*/
+    .ordered h1{
+        font-size: 30px;
+    }
+    .ordered div{
+        font-size: 20px;
+    }
+    .ordered a{
+        font-size: 18px;
+    }
+    .content-footer{
+        width: 90%;
+        padding: 5px;
+    }
+    .container p{
+        position: fixed;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    nav div{
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    nav div:nth-child(1){
+        display: block;
+        text-align: left;
+        background-color: white;
+        font-family: "Roboto-Light";
+        padding: 10px;
+        padding-left: 10px;
+        width: 100%;
+        z-index: 3;
+    }
+    nav a{
+        padding: 10px;
+        margin: 0;
+        border-bottom: 1px solid #cccccc;
+    }
+    .macbookpro-preview h1{
+        font-size: 30px;
+    }
+    .macbookpro-preview div:nth-child(3){
+        font-size: 20px;
+    }
+    .macbookpro-preview img{
+        width: 80%;
+    }
+    .SurfaceSwift-preview{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .SurfaceSwift-preview div:nth-child(1){
+        background-position: center;
+        background-size: 100%;
+        height: 300px;
+    }
+    .SurfaceSwift-preview div:nth-child(2){
+        background-position: center;
+        background-size: 60%;
+        height: 300px;
+    }
+    .SurfaceSwift-preview h1{
+        margin-top: 20px;
+        font-size: 22px;
+    }
+    .SurfaceSwift-preview p{
+        font-size: 14px;
+    }
+    .XPS-Zenbook-preview{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .XPS-Zenbook-preview div:nth-child(1){
+        background-position: bottom;
+        background-size: 70%;
+        height: 300px;
+    }
+    .XPS-Zenbook-preview div:nth-child(2){
+        background-position: center;
+        background-size: 60%;
+        height: 300px;
+    }
+    .XPS-Zenbook-preview h1{
+        margin-top: 40px;
+        font-size: 22px;
+    }
+    .XPS-Zenbook-preview p{
+        font-size: 14px;
+    }
+    .content-footer{
+        width: 90%;
+        padding: 5px;
+    }
+    .container-fluid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .container p{
+        position: inherit;
+        margin: 10px;
+    }
+    .container-fluid div:nth-child(1) img:nth-child(1){
+        opacity: 1;
+    }
+    .container-fluid div:nth-child(1) img:nth-child(2){
+        display: none;
+    }
+    .container-fluid h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .container-fluid div div:nth-child(2){
+        font-size: 16px;
+    }
+    .container-fluid h2{
+        text-align: center;
+        font-size: 28px;
+    }
+    .container-fluid .purchase{
+        width: 100%;
+    }
+    .ordered h1{
+        font-size: 30px;
+    }
+    .ordered div{
+        font-size: 20px;
+    }
+    .ordered a{
+        font-size: 18px;
+    }
+}
