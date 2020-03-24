@@ -18,6 +18,10 @@
     src: url(../fonts/Roboto/Roboto-Bold.ttf);
 }
 
+html{
+	overflow-y: scroll;
+}
+
 h1{
     font-family: "Roboto-Medium";
 }
